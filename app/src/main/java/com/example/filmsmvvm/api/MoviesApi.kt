@@ -5,8 +5,8 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 //TODO refactor
-interface MoviesApi {
+interface ImagesApi {
 
     @GET("/api")
-    suspend fun search(@Query("key") apiKey: String, @Query("q") query: String): SearchImageListDto
+    suspend fun getSearchImages(@Query("key") apiKey: String, @Query("q") query: String): SearchImageListDto
 }
