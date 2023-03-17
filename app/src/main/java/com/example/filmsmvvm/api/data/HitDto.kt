@@ -1,6 +1,6 @@
 package com.example.filmsmvvm.api.data
 
-data class ImageDto(
+data class HitDto(
     val id: String,
     val largeImageURL: String? = null,
     val imageURL: String? = null,
