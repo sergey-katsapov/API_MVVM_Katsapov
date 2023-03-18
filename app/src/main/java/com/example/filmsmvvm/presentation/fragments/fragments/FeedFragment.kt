@@ -8,7 +8,7 @@ import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.filmsmvvm.databinding.FragmentFeedBinding
-import com.example.filmsmvvm.presentation.fragments.adapters.ImagesAdapter
+import com.example.filmsmvvm.presentation.fragments.adapters.HitsAdapter
 import com.example.filmsmvvm.presentation.view_models.FeedViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -26,7 +26,7 @@ class FeedFragment : Fragment() {
         val binding = FragmentFeedBinding.inflate(inflater, container, false)
         this.binding = binding
 
-        val adapter = ImagesAdapter()
+        val adapter = HitsAdapter()
         binding.hitsRecycler.adapter = adapter
 
         viewModel.response.observe(viewLifecycleOwner) { response ->

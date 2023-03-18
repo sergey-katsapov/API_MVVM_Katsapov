@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.filmsmvvm.data.remote.dto.SearchHitsListDto
+import com.example.filmsmvvm.domain.models.SearchHitsList
 import com.example.filmsmvvm.domain.use_cases.HitsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
@@ -16,8 +17,8 @@ class FeedViewModel @Inject constructor(
     private val hitsUseCase: HitsUseCase
 ) : ViewModel() {
 
-    private val _response = MutableLiveData<SearchHitsListDto>()
-    val response: LiveData<SearchHitsListDto> = _response
+    private val _response = MutableLiveData<SearchHitsList>()
+    val response: LiveData<SearchHitsList> = _response
 
     init {
         viewModelScope.launch {
