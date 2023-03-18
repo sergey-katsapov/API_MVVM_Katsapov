@@ -1,10 +1,10 @@
-package com.example.filmsmvvm.ui
+package com.example.filmsmvvm.presentation.fragments.adapters
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.filmsmvvm.api.data.HitDto
+import com.example.filmsmvvm.data.remote.dto.HitDto
 import com.example.filmsmvvm.databinding.ItemImageBinding
 
 class ImagesAdapter : RecyclerView.Adapter<ImagesAdapter.HitHolder>() {

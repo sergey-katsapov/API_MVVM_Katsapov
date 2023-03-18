@@ -1,6 +1,6 @@
-package com.example.filmsmvvm.api.data
+package com.example.filmsmvvm.data.remote.dto
 
-data class SearchImageListDto(
+data class SearchHitsListDto(
     val total: Int? = null,
     val totalHits: Int? = null,
     val hits: List<HitDto>? = null

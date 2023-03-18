@@ -1,4 +1,4 @@
-package com.example.filmsmvvm.ui
+package com.example.filmsmvvm.presentation.fragments.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,8 @@ import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.example.filmsmvvm.databinding.FragmentFeedBinding
+import com.example.filmsmvvm.presentation.fragments.adapters.ImagesAdapter
+import com.example.filmsmvvm.presentation.view_models.FeedViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

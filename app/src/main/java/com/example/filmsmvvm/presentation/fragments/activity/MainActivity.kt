@@ -1,9 +1,10 @@
-package com.example.filmsmvvm
+package com.example.filmsmvvm.presentation.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.filmsmvvm.R
 import com.example.filmsmvvm.databinding.ActivityMainBinding
-import com.example.filmsmvvm.ui.FeedFragment
+import com.example.filmsmvvm.presentation.fragments.fragments.FeedFragment
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

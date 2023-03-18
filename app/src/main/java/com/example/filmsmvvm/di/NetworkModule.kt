@@ -1,7 +1,7 @@
 package com.example.filmsmvvm.di
 
 import com.example.filmsmvvm.Config
-import com.example.filmsmvvm.api.ImagesApi
+import com.example.filmsmvvm.data.remote.api.HitsApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -29,6 +29,6 @@ object NetworkModule {
 
     @Provides
     @Singleton
-    fun provideMoviesService(retrofit: Retrofit): ImagesApi =
-        retrofit.create(ImagesApi::class.java)
+    fun provideMoviesService(retrofit: Retrofit): HitsApi =
+        retrofit.create(HitsApi::class.java)
 }

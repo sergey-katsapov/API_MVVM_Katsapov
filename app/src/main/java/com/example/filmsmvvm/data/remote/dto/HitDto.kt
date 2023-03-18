@@ -1,4 +1,4 @@
-package com.example.filmsmvvm.api.data
+package com.example.filmsmvvm.data.remote.dto
 
 data class HitDto(
     val id: String,
