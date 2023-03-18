@@ -2,7 +2,7 @@ package com.example.filmsmvvm.di
 
 import com.example.filmsmvvm.data.repository.HitsRepositoryImpl
 import com.example.filmsmvvm.data.repository.remote.HitsRemote
-import com.example.filmsmvvm.domain.HitsRepository
+import com.example.filmsmvvm.domain.repositories.HitsRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

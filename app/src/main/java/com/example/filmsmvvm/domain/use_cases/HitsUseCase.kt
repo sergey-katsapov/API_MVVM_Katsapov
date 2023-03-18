@@ -1,6 +1,7 @@
-package com.example.filmsmvvm.domain
+package com.example.filmsmvvm.domain.use_cases
 
 import com.example.filmsmvvm.data.remote.dto.SearchHitsListDto
+import com.example.filmsmvvm.domain.repositories.HitsRepository
 import javax.inject.Inject
 
 class HitsUseCase @Inject constructor(

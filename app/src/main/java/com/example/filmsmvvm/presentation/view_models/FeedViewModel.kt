@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.filmsmvvm.data.remote.dto.SearchHitsListDto
-import com.example.filmsmvvm.domain.HitsUseCase
+import com.example.filmsmvvm.domain.use_cases.HitsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

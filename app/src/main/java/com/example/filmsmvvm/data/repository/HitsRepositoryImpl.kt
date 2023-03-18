@@ -2,7 +2,7 @@ package com.example.filmsmvvm.data.repository
 
 import com.example.filmsmvvm.data.remote.dto.SearchHitsListDto
 import com.example.filmsmvvm.data.repository.remote.HitsRemote
-import com.example.filmsmvvm.domain.HitsRepository
+import com.example.filmsmvvm.domain.repositories.HitsRepository
 import javax.inject.Inject
 
 class HitsRepositoryImpl @Inject constructor(
