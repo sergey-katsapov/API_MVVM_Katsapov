@@ -5,6 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/service_button"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Start Service"
+        app:layout_constraintBottom_toTopOf="@+id/edit_query"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
     <EditText
         android:id="@+id/edit_query"
         android:layout_width="0dp"
@@ -12,7 +22,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/service_button"
         android:importantForAutofill="no" />
 
     <androidx.recyclerview.widget.RecyclerView
